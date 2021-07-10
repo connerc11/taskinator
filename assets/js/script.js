@@ -30,10 +30,13 @@ var taskFormHandler = function(event) {
   } else {
     var taskDataObj = {
       name: taskNameInput,
-      type: taskTypeInput
+      type: taskTypeInput,
+      status: "to do"
     };
 
     createTaskEl(taskDataObj);
+    console.log(taskDataObj);
+console.log(taskDataObj.status);
   }
 };
 
